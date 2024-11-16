@@ -1,0 +1,82 @@
+﻿<Window x:Class="Welcome_login_and_sign_up.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Class Diagram and Use Case Quiz" Background="#2D2F33"
+        WindowState="Maximized" WindowStyle="None">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+        <StackPanel Margin="20" Height="1221">
+            <TextBlock FontSize="24" FontWeight="Bold" Text="Class Diagram and Use Case Quiz" HorizontalAlignment="Center" Foreground="#EDEDED" Margin="0,0,0,20"/>
+
+            <TextBlock FontSize="16" Text="1. Which of the following are types of relationships in a Class Diagram?" Margin="0,0,0,10" Foreground="#B0BEC5"/>
+            <CheckBox x:Name="Q1Option1" Content="Association" Foreground="White"/>
+            <CheckBox x:Name="Q1Option2" Content="Aggregation" Foreground="White"/>
+            <CheckBox x:Name="Q1Option3" Content="Inheritance" Foreground="White"/>
+            <CheckBox x:Name="Q1Option4" Content="include" Foreground="White"/>
+
+            <TextBlock FontSize="16" Text="2. Which of the following are elements in a Use Case Diagram?" Margin="0,20,0,10" Foreground="#B0BEC5"/>
+            <CheckBox x:Name="Q2Option1" Content="Actors" Foreground="White"/>
+            <CheckBox x:Name="Q2Option2" Content="Use Cases" Foreground="White"/>
+            <CheckBox x:Name="Q2Option3" Content="Messages" Foreground="White"/>
+            <CheckBox x:Name="Q2Option4" Content="System Boundary" Foreground="White"/>
+
+            
+            <TextBlock FontSize="16" Text="3. Which relationship represents 'Is a' relationship in Class Diagrams?" Margin="0,20,0,10" Foreground="#B0BEC5"/>
+            <RadioButton GroupName="Q3" x:Name="Q3Option1" Content="Association" Foreground="White"/>
+            <RadioButton GroupName="Q3" x:Name="Q3Option2" Content="Inheritance" Foreground="White"/>
+            <RadioButton GroupName="Q3" x:Name="Q3Option3" Content="Aggregation" Foreground="White"/>
+
+            <TextBlock FontSize="16" Text="4. What type of diagram shows the sequence of messages between objects?" Margin="0,20,0,10" Foreground="#B0BEC5"/>
+            <RadioButton GroupName="Q4" x:Name="Q4Option1" Content="Class Diagram" Foreground="White"/>
+            <RadioButton GroupName="Q4" x:Name="Q4Option2" Content="Sequence Diagram" Foreground="White"/>
+            <RadioButton GroupName="Q4" x:Name="Q4Option3" Content="Use Case Diagram" Foreground="White"/>
+
+            <TextBlock FontSize="16" Text="5. Which of these is not a type of class relationship?" Margin="0,20,0,10" Foreground="#B0BEC5"/>
+            <CheckBox x:Name="Q5Option1" Content="Composition" Foreground="White"/>
+            <CheckBox x:Name="Q5Option2" Content="Dependency" Foreground="White"/>
+            <CheckBox x:Name="Q5Option3" Content="Interaction" Foreground="White"/>
+            <CheckBox x:Name="Q5Option4" Content="Realization" Foreground="White"/>
+
+            <TextBlock FontSize="16" Text="6. Which relationship type is used for 'part-of' associations?" Margin="0,20,0,10" Foreground="#B0BEC5"/>
+            <RadioButton GroupName="Q6" x:Name="Q6Option1" Content="Inheritance" Foreground="White"/>
+            <RadioButton GroupName="Q6" x:Name="Q6Option2" Content="Aggregation" Foreground="White"/>
+            <RadioButton GroupName="Q6" x:Name="Q6Option3" Content="Association" Foreground="White"/>
+
+          
+            <TextBlock FontSize="16" Text="7. What is the main purpose of a Use Case Diagram?" Margin="0,20,0,10" Foreground="#B0BEC5"/>
+            <RadioButton GroupName="Q7" x:Name="Q7Option1" Content="To define system behavior" Foreground="White"/>
+            <RadioButton GroupName="Q7" x:Name="Q7Option2" Content="To define system architecture" Foreground="White"/>
+            <RadioButton GroupName="Q7" x:Name="Q7Option3" Content="To define database structure" Foreground="White"/>
+
+     
+            <TextBlock FontSize="16" Text="8. Which of the following is not part of a Class Diagram?" Margin="0,20,0,10" Foreground="#B0BEC5"/>
+            <RadioButton GroupName="Q8" x:Name="Q8Option1" Content="Objects" Foreground="White"/>
+            <RadioButton GroupName="Q8" x:Name="Q8Option2" Content="Classes" Foreground="White"/>
+            <RadioButton GroupName="Q8" x:Name="Q8Option3" Content="Actors" Foreground="White"/>
+
+          
+            <TextBlock FontSize="16" Text="9. What does aggregation represent in a Class Diagram?" Margin="0,20,0,10" Foreground="#B0BEC5"/>
+            <RadioButton GroupName="Q9" x:Name="Q9Option1" Content="Whole-Part relationship" Foreground="White"/>
+            <RadioButton GroupName="Q9" x:Name="Q9Option2" Content="Inheritance" Foreground="White"/>
+            <RadioButton GroupName="Q9" x:Name="Q9Option3" Content="Association" Foreground="White"/>
+
+            
+            <TextBlock FontSize="16" Text="10. Which type of diagram is used to show object interactions over time?" Margin="0,20,0,10" Foreground="#B0BEC5"/>
+            <RadioButton GroupName="Q10" x:Name="Q10Option1" Content="Sequence Diagram" Foreground="White"/>
+            <RadioButton GroupName="Q10" x:Name="Q10Option2" Content="Class Diagram" Foreground="White"/>
+            <RadioButton GroupName="Q10" x:Name="Q10Option3" Content="Use Case Diagram" Foreground="White"/>
+
+           
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                <Button Content="Check Answers" Width="128" Height="40" Click="CheckAnswers_Click"
+                        Background="#4CAF50" Foreground="White" BorderBrush="#4CAF50" FontSize="16" FontWeight="Bold" BorderThickness="0" Cursor="Hand"/>
+                <Button Content="Back" Width="128" Height="40" Margin="20,0,0,0" Click="BackButton_Click"
+                        Background="#757575" Foreground="White" BorderBrush="#757575" FontSize="16" FontWeight="Bold" BorderThickness="0" Cursor="Hand"/>
+                <Button Content="Logout" Width="128" Height="40" Margin="20,0,0,0" Click="LogoutButton_Click"
+                        Background="#F44336" Foreground="White" BorderBrush="#F44336" FontSize="16" FontWeight="Bold" BorderThickness="0" Cursor="Hand"/>
+                <Button Content="Go to To-Do List" Width="160" Height="40" Margin="20,0,0,0" Click="GoToTodoList_Click"
+                        Background="#2196F3" Foreground="White" BorderBrush="#2196F3" FontSize="16" FontWeight="Bold" BorderThickness="0" Cursor="Hand"/>
+                <TextBlock x:Name="ResultText" Foreground="White" FontSize="16" Margin="10" />
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
